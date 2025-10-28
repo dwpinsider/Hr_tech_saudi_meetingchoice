@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Delegate Meeting Registration</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'account/css/bootstrap.min.css' %}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head> 
+  <body>
+    <img
+      src="{% static 'header-dwp2.jpg' %}"
+      class="img-fluid"
+      alt="header image"
+    />
+    <div class="container mt-5">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group col-md-6">
+                <label for="last-name">Enter the coupon code*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  name="last_name"
+                  required
+                />
+              </div>
+</html>

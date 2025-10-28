@@ -1,0 +1,5 @@
+django
+django-import-export
+psycopg2-binary
+python-dotenv
+openpyxl
